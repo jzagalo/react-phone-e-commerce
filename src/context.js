@@ -105,11 +105,12 @@ export default class ProductProvider extends Component {
         const selectedProduct = tempCart.find(item=>item.id === id);
   
         const index = tempCart.indexOf(selectedProduct);
-        const product = tempCart[index];
+        let product = tempCart[index];
         product.count = product.count - 1;
 
-        if(product.count === 0) {
+        if(product.count === 0) {         
             this.removeItem(id);
+            return;
         } else{
             product.total = product.count * product.price;
         }

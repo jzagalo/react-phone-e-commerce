@@ -12,7 +12,7 @@ export default function CartTotals({value, history}) {
                     
                      onClick={() => clearCart()}>
                         <Link to="/">
-                            <button  type="button"   className="btn btn-outline-danger text-uppercase mb-3 px-5">
+                            <button  type="button" className="btn btn-outline-danger text-uppercase mb-3 px-5">
                                 clear cart
                             </button>
                         </Link>

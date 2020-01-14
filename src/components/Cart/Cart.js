@@ -22,13 +22,11 @@ export class Cart extends Component {
                                     <CartTotals value={value} history={this.props.history} />
                                 </React.Fragment>                              
                             )
-                        }else {
+                        } else {
                             return <EmptyCart />
                         }
                     }}
-                </ProductConsumer>
-                
-               
+                </ProductConsumer>                 
             </section>        
         )
     }
